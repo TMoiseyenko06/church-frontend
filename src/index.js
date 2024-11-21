@@ -6,7 +6,7 @@ const wrapper_1 = document.getElementById('wrap1')
 const wrapper_2 = document.getElementById('wrap2')
 const apiUrl = 'https://church-concert.onrender.com'
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
+const ran = false
 
 function validateEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -61,5 +61,9 @@ async function SubmitEvent(e){
 }
 
 form.addEventListener("submit", (event) => {
-  SubmitEvent(event)
+  if (ran==false){
+    SubmitEvent(event)
+    ran = true
+  }
+
 },{ once: true })
