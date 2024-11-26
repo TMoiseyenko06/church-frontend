@@ -25,7 +25,9 @@ async function checkEmail(email){
   })
   .then(response =>{
     if (response.ok){
-      return true
+      wrapper_1.style.display = 'none';
+      wrapper_2.style.display = 'block'
+      return response.json()
     }
     return false
   })
