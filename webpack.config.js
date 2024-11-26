@@ -43,5 +43,5 @@ module.exports = {
   },
 
   // Use 'development' mode for unminified builds (use 'production' for optimized builds)
-  mode: 'development',
+  mode: 'production',
 };
