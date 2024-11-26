@@ -33,7 +33,6 @@ async function checkEmail(email){
 }
 
 async function SubmitEvent(e){
-    e.preventDefault();
     const firstName = document.getElementById('first-name').value;
     const lastName = document.getElementById('last-name').value;
     const email = document.getElementById('email').value;
@@ -62,6 +61,7 @@ async function SubmitEvent(e){
 }
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault()
   if (ran==false){
     SubmitEvent(event)
     ran = true
