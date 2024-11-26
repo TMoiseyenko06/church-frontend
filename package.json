@@ -1,10 +1,10 @@
 {
   "name": "my-webpack-project",
   "version": "1.0.0",
-  "scripts": {
-    "build": "npm install -D webpack-cli --yes && webpack --config webpack.config.js",
-    "start": "webpack serve --config webpack.config.js"
-  },
+"scripts": {
+  "build": "npm install --no-optional && npm install -D webpack-cli --no-optional && webpack --config webpack.config.js"
+}
+,
   "devDependencies": {
     "css-loader": "^6.11.0",
     "dotenv-webpack": "^7.0.0",
