@@ -4,6 +4,8 @@ const form = document.getElementById('reg-form')
 const wrapper_1 = document.getElementById('wrap1')
 const wrapper_2 = document.getElementById('wrap2')
 const apiUrl = 'https://church-concert.onrender.com'
+const wrapper_0 = document.getElementById('wrap0')
+const change_btn = document.getElementById('change')
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const ran = false
 
@@ -68,3 +70,9 @@ form.addEventListener("submit", (event) => {
   }
 
 },{ once: true })
+
+change_btn.addEventListener("click", (event) => {
+  event.preventDefault()
+  wrapper_0.style.display = 'none';
+  wrapper_1.style.display = 'block'
+}, {once:true})

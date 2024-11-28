@@ -152,5 +152,9 @@ button:hover {
 }
 
 #wrap1 {
+  display: none;
+}
+
+#wrap0 {
   display: block;
 }
