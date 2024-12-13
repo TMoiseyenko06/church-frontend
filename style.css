@@ -149,6 +149,10 @@ button:hover {
   font-size: 0.75rem;
 }
 
+.para2 {
+  margin-top: 3px;
+}
+
 #wrap2 {
   display: none;
 }
